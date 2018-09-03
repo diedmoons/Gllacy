@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-weight: 400;
+}
+.header_top{
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+ 
+.row{
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+
+}
+.left_head{
+	display: flex;
+	margin-left:25px;
+	margin-top: 9px;
+
+}
+.right_head{
+	display: flex;
+    margin-right: 27px;
+    margin-top: 25px;
+    width: 256px;
+    justify-content: space-around;
+
+}
+.logo{
+	padding-right:10px;
+	width: 154px;
+	height: 64px;
+	background: gray;
+}
+.menu{
+	display: flex;
+    width: 349px;
+    height: 15px;
+    padding-left: 25px;
+    margin: auto;
+    justify-content: space-around;
+}
+.link{
+	border-bottom: 1px solid #95b1a2;
+	text-decoration: none;
+	color: black;
+}
+.Search{
+	background:#a2b7ab;
+	height: 33px;
+	width: 33px;
+	border-radius: 50%;
+	border: none;
+	position: relative;
+	
+}
+.Search:before{
+	    content: "";
+    background: url(../img/Лупа.png);
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 7px;
+    top: 7px;
+}
+.Personal_Area{
+	background: #a2b7ab;
+	color: white;
+    width: 93px;
+    height: 32px;
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    padding: 0px 15px 0px 42px;
+}
+.Personal_Area:before{
+	content: "";
+    background: url(../img/Вход.png);
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    left: 18px;   
+}
+.Basket{
+	color: white;
+	width: 117px;
+	height: 32px;
+    border-radius: 15px;
+    padding: 6px 34px 10px 50px;
+    background: #9db1a5;
+    border: none;
+    position: relative;
+}
+.Basket:before{
+	content: "";
+    background: url(../img/Корзина.png);
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    left: 25px;
+}
