@@ -3,52 +3,64 @@
 	font-family: Roboto;
 	font-weight: 400;
 }
+body{
+	background-image: url(../img/bg_slider-1.jpg);
+	background-color:#849d8f;
+	background-repeat: no-repeat;
+	min-height: 1000px;
+	background-position: 50% 0;
+}
+.container{
+	width: 1200px;
+	margin: auto;
+	padding: 0px 25px;
+	padding-top: 10px;
+	
+}
+
 .header_top{
 	display: flex;
-	flex-direction: row;
-	width: 1200px;
-	margin-right: 15px;
-	margin-left: 15px;
+	align-items: center;
 }
  
-.row{
-	display: flex;
-	width: 100%;
-    justify-content: space-between;
 
-}
 .left_head{
 	display: flex;
-	margin-left:25px;
-	margin-top: 9px;
+	width: 50%;
+	align-items: center;
+
 
 }
 .right_head{
 	display: flex;
-    margin-right: 27px;
-    margin-top: 25px;
-    width: 256px;
-    justify-content: space-around;
+    width: 50%;
+    justify-content: flex-end;
+	align-items: center;
+}
+.desc{
+	width: 100%;
+	text-align: right;
+}
+.right_head > button{
+	margin-right: 10px;
 
 }
 .logo{
-	padding-right:10px;
-	width: 154px;
-	height: 64px;
-	background: gray;
+	margin-right: 25px;	
+}
+.menu_item{
+	margin-right: 28px;
 }
 .menu{
 	display: flex;
-    width: 349px;
-    height: 15px;
-    padding-left: 25px;
-    margin: auto;
-    justify-content: space-around;
+	list-style-type: none;
+	padding: 0px;
+
 }
 .link{
 	border-bottom: 1px solid #95b1a2;
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .Search{
 	background:#a2b7ab;
@@ -88,13 +100,12 @@
 }
 .Basket{
 	color: white;
-	width: 117px;
-	height: 32px;
     border-radius: 15px;
-    padding: 6px 34px 10px 50px;
+    padding: 8px 28px 8px 44px;
     background: #9db1a5;
     border: none;
     position: relative;
+    font-size: 15px;
 }
 .Basket:before{
 	content: "";
@@ -102,5 +113,129 @@
     position: absolute;
     width: 21px;
     height: 20px;
-    left: 25px;
+    left: 17px;
+    top: 5px;
+}
+.time{
+	color: white;
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+.number{
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+}
+.baner{
+	margin-top: 273px;
+	margin-bottom: 20px;
+
+}
+.baner_title{
+	font-size: 60px;
+    font-weight: 900;
+    color: white;
+    width: 690px;
+    display: block;
+    margin: auto;
+    line-height: 65px;
+    margin-bottom: 20px;
+}
+.baner_butt{
+	display: block;
+    margin: auto;
+    background: linear-gradient(#f06643,#cb3926);
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 40px;
+    color: white;
+    border: 0px;
+    padding: 16px 41px;
+    margin-bottom: 40px;
+}
+
+
+}
+.baner_butt:hover{
+	background: #e76c3a;
+	cursor: pointer;
+}
+.baner_butt:active{
+	background: linear-gradient(#cb3926, #f06643);
+}
+.darom{
+	display: flex;
+	justify-content: space-between;
+}
+.respberries{
+	height: 230px;
+	width: 560px;
+	content: "";
+    background: url(../img/Малиновый_фон.jpg);
+    border-radius: 20px;
+    border:none;
+    padding: 0px 20px;
+    position: relative;
+}
+.respberries_darom{
+	color: white;
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+.respberries_info{
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+}
+.button_jam{
+	color: white;	
+	background: linear-gradient(#e74a36,#f06542);
+	border: 0px;
+	border-radius: 40px;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 13px 20px;
+	position: absolute;
+    left: 373px;
+    bottom: 25px;
+}
+.button_jam:active{
+	background: linear-gradient(#f06542, #e74a36);
+}
+.chocolate{
+	height: 230px;
+	width: 560px;
+	content: "";
+    background: url(../img/Шоколадный_фон.jpg);
+    border-radius: 20px;
+    border:none;
+    padding: 0px 20px;
+    position: relative;
+}
+.chocolate_darom{
+	color: white;
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+.chocolate_info{
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+}
+.button_chocolate{
+	color: white;	
+	background: linear-gradient(#e74a36,#f06542);
+	border: 0px;
+	border-radius: 40px;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 13px 20px;
+	position: absolute;
+    left: 373px;
+    bottom: 25px;
+}
+.button_chocolate:active{
+	background: linear-gradient(#f06542, #e74a36);
 }
